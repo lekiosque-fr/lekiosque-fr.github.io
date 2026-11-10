@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="fr"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Le Kiosque – Mentions</title>
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Inter:wght@400;600;700&display=swap">
+<style>
+/* Mise en page : une colonne de lecture, bandeau de marque en haut, deux sections ancrées (#conditions, #confidentialite) */
+:root{
+  --fond:#FFF8E8; --texte:#141B42; --doux:#4B5175; --navy:#141B42; --jaune:#FFC826; --rouge:#E83930; --trait:#E9DDBD; --carte:#FFFFFF;
+  --f-marque:"Luckiest Guy", "Arial Black", Impact, sans-serif; --f-texte:Inter, "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){ --fond:#0F1330; --texte:#F3EEDD; --doux:#B9BCD6; --navy:#0A0D24; --jaune:#FFC826; --rouge:#FF6B5F; --trait:#2A3060; --carte:#161B40; color-scheme:dark } }
+:root[data-theme="dark"]{ --fond:#0F1330; --texte:#F3EEDD; --doux:#B9BCD6; --navy:#0A0D24; --jaune:#FFC826; --rouge:#FF6B5F; --trait:#2A3060; --carte:#161B40; color-scheme:dark }
+body{ background:var(--fond); color:var(--texte); font-family:var(--f-texte); font-size:16px; line-height:1.65 }
+.bandeau{ background:var(--navy); border-bottom:6px solid var(--jaune) }
+.bandeau .in, main, footer{ max-width:720px; margin:0 auto; padding-left:max(16px, env(safe-area-inset-left,0px)); padding-right:max(16px, env(safe-area-inset-right,0px)) }
+.bandeau .in{ padding-block:28px; display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:8px 20px }
+.marque{ font-family:var(--f-marque); color:#FFF6E2; font-size:clamp(30px,6vw,44px); letter-spacing:.5px; margin:0; line-height:1 }
+.marque span{ color:var(--jaune) }
+.ligne{ color:var(--jaune); font-weight:700; font-size:13px; letter-spacing:.12em; text-transform:uppercase }
+nav{ display:flex; gap:10px; flex-wrap:wrap; padding-block:20px 4px }
+nav a{ color:var(--texte); background:var(--carte); border:1px solid var(--trait); border-radius:999px; padding:6px 14px; text-decoration:none; font-weight:600; font-size:14px }
+nav a:focus-visible, a:focus-visible{ outline:3px solid var(--jaune); outline-offset:2px }
+main{ padding-block:8px 40px }
+section{ padding-block:24px; border-bottom:1px solid var(--trait) }
+section:last-child{ border-bottom:0 }
+h2{ font-family:var(--f-marque); font-weight:400; font-size:28px; letter-spacing:.3px; margin:0 0 4px; text-wrap:balance }
+.maj{ color:var(--doux); font-size:14px; margin:0 0 16px }
+h3{ font-size:17px; margin:22px 0 6px }
+p, li{ max-width:65ch } ul{ padding-left:20px; margin:6px 0 }
+strong{ color:var(--rouge) }
+footer{ padding-block:0 32px; color:var(--doux); font-size:14px }
+body{margin:0}</style></head><body>
+
+<header class="bandeau"><div class="in">
+  <h1 class="marque">LE <span>KIOSQUE</span></h1>
+  <span class="ligne">Actu · Culture · Idées</span>
+</div></header>
+
+<main>
+  <nav aria-label="Sections"><a href="#conditions">Conditions d'utilisation</a><a href="#confidentialite">Politique de confidentialité</a></nav>
+
+  <section id="conditions">
+    <h2>Conditions d'utilisation</h2>
+    <p class="maj">En vigueur depuis le 10 novembre 2026</p>
+    <h3>Ce qu'est « Le Kiosque »</h3>
+    <p>Le Kiosque est une chaîne de vidéos courtes (actualité, culture, idées) publiée sur TikTok, Instagram, Facebook et YouTube sous le nom @lekiosquefr. L'application « Le Kiosque » enregistrée auprès de TikTok est un outil privé : elle sert uniquement à envoyer les vidéos de la chaîne vers <strong>son propre compte</strong>, depuis l'ordinateur de son créateur.</p>
+    <h3>Qui peut l'utiliser</h3>
+    <p>L'outil n'est pas proposé au public. Seul le titulaire du compte @lekiosquefr s'y connecte, avec la connexion officielle de TikTok. Aucun autre compte n'est géré.</p>
+    <h3>Contenus</h3>
+    <ul>
+      <li>Les vidéos publiées sont des créations originales de la chaîne.</li>
+      <li>Les contenus générés ou modifiés par intelligence artificielle sont signalés comme tels, conformément aux règles de chaque plateforme.</li>
+      <li>La chaîne respecte les Conditions d'utilisation et les Règles communautaires de TikTok, Instagram, Facebook et YouTube.</li>
+    </ul>
+    <h3>Responsabilité</h3>
+    <p>Les vidéos ont un but d'information et de divertissement. Elles ne constituent pas un conseil professionnel. Le Kiosque s'efforce de vérifier ce qu'il publie et corrige toute erreur qui lui est signalée.</p>
+    <h3>Modifications</h3>
+    <p>Ces conditions peuvent évoluer. La date en haut de cette section indique la dernière mise à jour.</p>
+  </section>
+
+  <section id="confidentialite">
+    <h2>Politique de confidentialité</h2>
+    <p class="maj">En vigueur depuis le 10 novembre 2026</p>
+    <h3>Données utilisées</h3>
+    <p>Quand le titulaire du compte connecte l'application, TikTok lui transmet un jeton d'accès et les informations de base de <strong>son propre profil</strong> (nom affiché et nom d'utilisateur). Ces éléments servent uniquement à publier ses vidéos et à vérifier qu'elles sont bien en ligne.</p>
+    <h3>Ce que l'application ne fait pas</h3>
+    <ul>
+      <li>Elle ne collecte aucune donnée sur les spectateurs, les abonnés ou les autres utilisateurs de TikTok.</li>
+      <li>Elle ne vend, ne loue et ne partage aucune donnée avec des tiers.</li>
+      <li>Elle n'utilise aucun traceur publicitaire.</li>
+    </ul>
+    <h3>Où sont gardées les données</h3>
+    <p>Le jeton d'accès reste stocké uniquement sur l'ordinateur personnel du créateur de la chaîne. Il n'est envoyé qu'aux serveurs officiels de TikTok, au moment de publier.</p>
+    <h3>Durée et suppression</h3>
+    <p>Les données sont conservées tant que la connexion est active. Le titulaire peut tout effacer à tout moment en déconnectant l'application, ou en retirant son accès dans TikTok (Paramètres › Sécurité › Applications et services).</p>
+    <h3>Contact</h3>
+    <p>Pour toute question sur ces pages : message privé au compte TikTok <strong>@lekiosquefr</strong>.</p>
+  </section>
+</main>
+<footer>© 2026 Le Kiosque</footer>
+
+</body></html>
