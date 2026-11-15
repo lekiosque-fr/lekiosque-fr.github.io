@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>La Boutique Le Kiosque · T-shirts et sweats péi</title>
+<meta name="description" content="T-shirts, sweats et mugs péi : cadeaux, souvenirs de La Réunion et animaux qui ont du caractère. Imprimés à la commande, livrés chez vous.">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--creme:#f4ecdf;--marine:#16213a;--orange:#e8692c;--sarcelle:#2f8f8a;--texte:#1d2333}
+*{box-sizing:border-box}
+body{margin:0;background:var(--creme);color:var(--texte);font-family:Montserrat,system-ui,sans-serif}
+a{color:inherit}
+header{background:var(--marine);color:var(--creme);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;gap:12px;position:sticky;top:0;z-index:5}
+.marque{display:flex;align-items:center;gap:10px;text-decoration:none;font-family:"Bebas Neue";font-size:26px;letter-spacing:1px}
+.marque img{width:38px;height:38px;border-radius:50%}
+.btn{display:inline-block;background:var(--orange);color:#fff;text-decoration:none;font-weight:800;padding:12px 22px;border-radius:999px}
+.btn.clair{background:transparent;border:2px solid currentColor;color:inherit}
+.haut{background:linear-gradient(180deg,var(--marine) 0%,#22305a 100%);color:var(--creme);text-align:center;padding:70px 20px 90px;position:relative;overflow:hidden}
+.haut:after{content:"";position:absolute;left:50%;bottom:-160px;width:520px;height:520px;transform:translateX(-50%);border-radius:50%;
+ background:repeating-linear-gradient(180deg,#f2b84b 0 34px,var(--orange) 34px 52px,transparent 52px 64px);opacity:.35}
+.haut h1{font-family:"Bebas Neue";font-size:clamp(48px,9vw,96px);line-height:.95;margin:0 0 14px;position:relative;z-index:1}
+.haut h1 span{color:#f2b84b}
+.haut p{max-width:620px;margin:0 auto 26px;font-size:18px;line-height:1.5;position:relative;z-index:1}
+.haut .btn{position:relative;z-index:1}
+.bandeau{display:flex;flex-wrap:wrap;justify-content:center;gap:10px 28px;padding:18px 20px;background:var(--sarcelle);color:#fff;font-weight:700}
+section{max-width:1120px;margin:0 auto;padding:60px 20px}
+h2{font-family:"Bebas Neue";font-size:clamp(36px,6vw,54px);margin:0 0 8px;color:var(--marine)}
+.sous{margin:0 0 30px;font-size:17px}
+.filtres{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filtres button{border:2px solid var(--marine);background:transparent;border-radius:999px;padding:8px 16px;font:700 14px Montserrat;cursor:pointer;color:var(--marine)}
+.filtres button.actif{background:var(--marine);color:var(--creme)}
+.grille{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:22px}
+.produit{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 6px 20px rgba(22,33,58,.08);display:flex;flex-direction:column}
+.produit img{width:100%;aspect-ratio:12/13;object-fit:cover;background:#ece6da}
+.produit .info{padding:16px;display:flex;flex-direction:column;gap:6px;flex:1}
+.produit .tag{font-size:12px;font-weight:800;color:var(--sarcelle);text-transform:uppercase;letter-spacing:.5px}
+.produit b{font-size:17px}
+.produit .prix{margin-top:auto;display:flex;align-items:center;justify-content:space-between;padding-top:10px}
+.produit .prix span{font-weight:800}
+.produit .prix a{font-size:14px;padding:9px 16px}
+.produit .aussi{font-size:13px;color:#555;padding-top:8px}
+.produit .aussi a{color:var(--orange);font-weight:800}
+.produit a.photo{display:block}
+.bandeau a{color:#fff;text-decoration:underline;text-underline-offset:3px}
+.etapes{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.etape{background:#fff;border-radius:18px;padding:22px}
+.etape .n{font-family:"Bebas Neue";font-size:44px;color:var(--orange);line-height:1}
+footer{background:var(--marine);color:var(--creme);text-align:center;padding:30px 20px;font-size:14px;line-height:1.6}
+</style>
+</head>
+<body>
+<header>
+ <a class="marque" href="#"><img src="logo.png" alt="Logo Le Kiosque">La Boutique Le Kiosque</a>
+ <a class="btn" href="#modeles">Voir les modèles</a>
+</header>
+
+<div class="haut">
+ <h1>Des t-shirts<br><span>100 % péi</span></h1>
+ <p>Des cadeaux qui font rire, des souvenirs de La Réunion et nos animaux qui ont du caractère. Imprimés à la commande, livrés chez vous.</p>
+ <a class="btn" href="#modeles">Je choisis mon modèle</a>
+</div>
+<div class="bandeau"><span><a href="https://lekiosque.myspreadshop.fr/hommes/t-shirt">T-shirts</a>, <a href="https://lekiosque.myspreadshop.fr/hommes/sweat-shirt">sweats</a> et <a href="https://lekiosque.myspreadshop.fr/maison+%26+vie/mugs+et+r%C3%A9cipients">mugs</a></span><span>Imprimé à la commande</span><span>Livré à La Réunion et en France</span></div>
+
+<section id="modeles">
+ <h2>Les modèles</h2>
+ <p class="sous">Chaque motif existe en t-shirt, en sweat à capuche et en mug.</p>
+ <div class="filtres">
+  <button class="actif" data-f="tout">Tout</button><button data-f="cadeau">Cadeaux</button><button data-f="souvenir">Souvenirs 974</button><button data-f="animal">Animaux péi</button>
+ </div>
+ <div class="grille">
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/manman+pei+la+reine+de+la+kaz+974-A328b8ef22033c1df" class="photo"><img src="m1_maquette.jpg" alt="T-shirt Manman péi" loading="lazy"></a><div class="info"><span class="tag">Cadeau fête des mères</span><b>Manman péi, la reine de la kaz</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/manman+pei+la+reine+de+la+kaz+974-A328b8ef22033c1df">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/manman+pei+la+reine+de+la+kaz+974-A328b8ef22033c1df?sellable=ro66mzm0qnkv-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/manman+pei+la+reine+de+la+kaz+974-A328b8ef22033c1df?sellable=ro66mzm0qnkv-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/en+retraite+adieu+le+reveil+974-A328b8ef4e3c91345" class="photo"><img src="m2_maquette.jpg" alt="T-shirt En retraite" loading="lazy"></a><div class="info"><span class="tag">Cadeau retraite</span><b>En retraite, adieu le réveil</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/en+retraite+adieu+le+reveil+974-A328b8ef4e3c91345">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/en+retraite+adieu+le+reveil+974-A328b8ef4e3c91345?sellable=ro66n52clbut-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/en+retraite+adieu+le+reveil+974-A328b8ef4e3c91345?sellable=ro66n52clbut-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/vintage+1986+edition+limitee+974-A328ba04be8316f2a" class="photo"><img src="m3_maquette.jpg" alt="T-shirt Vintage 1986" loading="lazy"></a><div class="info"><span class="tag">Cadeau anniversaire</span><b>Vintage 1986, édition limitée</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/vintage+1986+edition+limitee+974-A328ba04be8316f2a">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/vintage+1986+edition+limitee+974-A328ba04be8316f2a?sellable=ro6deflrluzu-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/vintage+1986+edition+limitee+974-A328ba04be8316f2a?sellable=ro6deflrluzu-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/futur+papa+livraison+prevue+en+2027-A328ba04dccd83da6" class="photo"><img src="m4_maquette.jpg" alt="T-shirt Futur papa" loading="lazy"></a><div class="info"><span class="tag">Cadeau futur papa</span><b>Futur papa, livraison prévue en 2027</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/futur+papa+livraison+prevue+en+2027-A328ba04dccd83da6">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/futur+papa+livraison+prevue+en+2027-A328ba04dccd83da6?sellable=ro6dejc8nnae-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/futur+papa+livraison+prevue+en+2027-A328ba04dccd83da6?sellable=ro6dejc8nnae-31">mug</a></div></div></div>
+  <div class="produit" data-c="souvenir"><a href="https://lekiosque.myspreadshop.fr/piton+de+la+fournaise+ile+de+la+reunion-A328b8ef203a1e660" class="photo"><img src="m5_maquette.jpg" alt="T-shirt Piton de la Fournaise" loading="lazy"></a><div class="info"><span class="tag">Souvenir 974</span><b>Piton de la Fournaise</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/piton+de+la+fournaise+ile+de+la+reunion-A328b8ef203a1e660">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/piton+de+la+fournaise+ile+de+la+reunion-A328b8ef203a1e660?sellable=ro66mze3d55s-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/piton+de+la+fournaise+ile+de+la+reunion-A328b8ef203a1e660?sellable=ro66mze3d55s-31">mug</a></div></div></div>
+  <div class="produit" data-c="souvenir"><a href="https://lekiosque.myspreadshop.fr/cirque+de+mafate+rando+club+reunion-A328b8ef32cf6a0dd" class="photo"><img src="m6_maquette.jpg" alt="T-shirt Cirque de Mafate" loading="lazy"></a><div class="info"><span class="tag">Souvenir 974</span><b>Cirque de Mafate, rando club</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/cirque+de+mafate+rando+club+reunion-A328b8ef32cf6a0dd">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/cirque+de+mafate+rando+club+reunion-A328b8ef32cf6a0dd?sellable=ro66n1olbkd9-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/cirque+de+mafate+rando+club+reunion-A328b8ef32cf6a0dd?sellable=ro66n1olbkd9-31">mug</a></div></div></div>
+  <div class="produit" data-c="animal"><a href="https://lekiosque.myspreadshop.fr/mi+le+fatige+le+tangue+pei-A328b8ef1cd68a800" class="photo"><img src="m7_maquette.jpg" alt="T-shirt Mi lé fatigé" loading="lazy"></a><div class="info"><span class="tag">Animal péi</span><b>Mi lé fatigé depuis la naissance</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/mi+le+fatige+le+tangue+pei-A328b8ef1cd68a800">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/mi+le+fatige+le+tangue+pei-A328b8ef1cd68a800?sellable=ro66myz1qnsw-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/mi+le+fatige+le+tangue+pei-A328b8ef1cd68a800?sellable=ro66myz1qnsw-31">mug</a></div></div></div>
+  <div class="produit" data-c="animal"><a href="https://lekiosque.myspreadshop.fr/papangue+le+roi+du+ciel+974-A328b8ef36428c496" class="photo"><img src="m8_maquette.jpg" alt="T-shirt Papangue" loading="lazy"></a><div class="info"><span class="tag">Animal péi</span><b>Papangue, le roi du ciel</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/papangue+le+roi+du+ciel+974-A328b8ef36428c496">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/papangue+le+roi+du+ciel+974-A328b8ef36428c496?sellable=ro66n23wnnva-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/papangue+le+roi+du+ciel+974-A328b8ef36428c496?sellable=ro66n23wnnva-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/noel+au+soleil+le+pere+noel+en+savates-A328ca5ec20c192ab" class="photo"><img src="m13_maquette.jpg" alt="T-shirt Noël au soleil" loading="lazy"></a><div class="info"><span class="tag">Cadeau de Noël</span><b>Noël au soleil, le Père Noël en savates</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/noel+au+soleil+le+pere+noel+en+savates-A328ca5ec20c192ab">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/noel+au+soleil+le+pere+noel+en+savates-A328ca5ec20c192ab?sellable=ro97d93ggjhn-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/noel+au+soleil+le+pere+noel+en+savates-A328ca5ec20c192ab?sellable=ro97d93ggjhn-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/reveillon+letchis+et+cari-A328ca617c5e85af9" class="photo"><img src="m14_maquette.jpg" alt="T-shirt Réveillon" loading="lazy"></a><div class="info"><span class="tag">Cadeau de Noël</span><b>Réveillon, letchis et cari</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/reveillon+letchis+et+cari-A328ca617c5e85af9">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/reveillon+letchis+et+cari-A328ca617c5e85af9?sellable=ro97fn7lydq1-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/reveillon+letchis+et+cari-A328ca617c5e85af9?sellable=ro97fn7lydq1-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/samousa+mon+seul+amour-A328ca6398c9246e4" class="photo"><img src="m15_maquette.jpg" alt="T-shirt Samousa" loading="lazy"></a><div class="info"><span class="tag">Cadeau gourmand</span><b>Samousa, mon seul amour</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/samousa+mon+seul+amour-A328ca6398c9246e4">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/samousa+mon+seul+amour-A328ca6398c9246e4?sellable=ro97hhur2h9g-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/samousa+mon+seul+amour-A328ca6398c9246e4?sellable=ro97hhur2h9g-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/super+papi+le+roi+du+cari-A328ca63a84a4374a" class="photo"><img src="m16_maquette.jpg" alt="T-shirt Super papi" loading="lazy"></a><div class="info"><span class="tag">Cadeau papi</span><b>Super papi, le roi du cari</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/super+papi+le+roi+du+cari-A328ca63a84a4374a">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/super+papi+le+roi+du+cari-A328ca63a84a4374a?sellable=ro97hjrkyzbe-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/super+papi+le+roi+du+cari-A328ca63a84a4374a?sellable=ro97hjrkyzbe-31">mug</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/super+parrain+en+service-A328ca66ae4573f25" class="photo"><img src="m17_maquette.jpg" alt="T-shirt Super parrain" loading="lazy"></a><div class="info"><span class="tag">Cadeau parrain</span><b>Super parrain en service</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/super+parrain+en+service-A328ca66ae4573f25">Je le veux</a></div></div></div>
+  <div class="produit" data-c="cadeau"><a href="https://lekiosque.myspreadshop.fr/bilan+2026+jai+survecu-A328ca669ac1dc60b" class="photo"><img src="m18_maquette.jpg" alt="T-shirt Bilan 2026" loading="lazy"></a><div class="info"><span class="tag">Cadeau nouvel an</span><b>Bilan 2026, j'ai survécu</b><div class="prix"><span>T-shirt dès 23,49 €</span><a class="btn" href="https://lekiosque.myspreadshop.fr/bilan+2026+jai+survecu-A328ca669ac1dc60b">Je le veux</a></div><div class="aussi">Aussi en <a href="https://lekiosque.myspreadshop.fr/bilan+2026+jai+survecu-A328ca669ac1dc60b?sellable=ro97k4szkgzv-1047">sweat à capuche</a> et en <a href="https://lekiosque.myspreadshop.fr/bilan+2026+jai+survecu-A328ca669ac1dc60b?sellable=ro97k4szkgzv-31">mug</a></div></div></div>
+ </div>
+</section>
+
+<section>
+ <h2>Comment ça marche</h2>
+ <div class="etapes">
+  <div class="etape"><div class="n">1</div><b>Vous choisissez</b><p>Le motif, puis le t-shirt, le sweat ou le mug, la taille et la couleur.</p></div>
+  <div class="etape"><div class="n">2</div><b>On imprime</b><p>Chaque pièce est imprimée rien que pour vous, à la commande.</p></div>
+  <div class="etape"><div class="n">3</div><b>Vous recevez</b><p>Livraison chez vous, à La Réunion comme en France.</p></div>
+ </div>
+</section>
+
+<footer>La Boutique Le Kiosque (@lekiosquefr) · Le paiement et la livraison se font sur notre boutique partenaire.<br>Une question ? lekiosquestudio01@gmail.com</footer>
+
+<script>
+document.querySelectorAll(".filtres button").forEach(b=>b.onclick=()=>{
+ document.querySelectorAll(".filtres button").forEach(x=>x.classList.toggle("actif",x===b));
+ document.querySelectorAll(".produit").forEach(p=>p.style.display=(b.dataset.f==="tout"||p.dataset.c===b.dataset.f)?"":"none");
+});
+</script>
+<script>
+/* Compteur de visites gratuit et anonyme (aucun cookie, aucune donnée personnelle) : une visite par personne et par jour. */
+(function(){var R='https://ntfy.sh/kq-visites-19ec94dee7cb',P='tshirts';
+function envoi(t){try{fetch(R,{method:'POST',body:t,mode:'no-cors',keepalive:true,credentials:'omit'});}catch(e){}}
+if(navigator.webdriver)return;
+var s='direct';try{var u=new URLSearchParams(location.search).get('utm_source');var r=document.referrer||'';
+if(u)s=u.toLowerCase().replace(/[^a-z0-9]/g,'').slice(0,20);else if(/pinterest|pin\.it/.test(r))s='pinterest';else if(/google\./.test(r))s='google';else if(/facebook|fb\.|instagram/.test(r))s='facebook';else if(/tiktok/.test(r))s='tiktok';else if(r&&r.indexOf(location.hostname)<0)s='autre';}catch(e){}
+var j=new Date().toISOString().slice(0,10),deja=false;try{deja=localStorage.getItem('kq_vu_'+P)===j;localStorage.setItem('kq_vu_'+P,j);}catch(e){}
+if(!deja)envoi('v|'+P+'|'+s);
+document.querySelectorAll('a[href*="myspreadshop"]').forEach(function(a){a.addEventListener('click',function(){envoi('c|'+P+'|achat');});});
+})();
+</script>
+</body>
+</html>
