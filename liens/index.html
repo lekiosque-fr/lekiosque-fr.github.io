@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Le Kiosque Studio · Tous nos liens</title>
-<meta name="description" content="Toutes les créations du Kiosque Studio : carnet, vêtements, vidéos pub.">
+<meta name="description" content="Toutes les créations du Kiosque Studio : boutique de t-shirts, chaîne Le Kiosque, pubs vidéo et carnet.">
 <style>
   :root { --nuit:#1B2A4A; --jaune:#F2C230; --ivoire:#FBF6EA; --gris:#5b6478; }
   * { box-sizing:border-box; }
@@ -21,6 +21,12 @@
   .emo { font-size:28px; }
   .carte b { display:block; font-size:17px; }
   .carte span { font-size:14px; color:var(--gris); }
+  .projet { margin:0 0 22px; }
+  .projet a.carte, .projet div.carte { margin:0 0 10px; }
+  div.carte { display:flex; align-items:center; gap:14px; background:#fff; border:2px solid var(--nuit); border-radius:14px; padding:14px 16px; }
+  .carte .emo { font-size:28px; }
+  .carte i.bouton { display:table; margin-top:8px; background:var(--nuit); color:var(--ivoire); font-style:normal; font-size:14px; padding:6px 14px; border-radius:999px; }
+  .projet .reseaux { justify-content:flex-start; padding-left:6px; }
   .reseaux { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
   .reseaux a { background:var(--nuit); color:var(--ivoire); text-decoration:none; padding:9px 14px; border-radius:999px; font-size:14px; }
   footer { text-align:center; font-size:13px; color:var(--gris); padding:0 16px 30px; }
@@ -33,20 +39,31 @@
   <p>Des créations faites maison. Tout est ici 👇</p>
 </header>
 <main>
-  <h2>Nos créations</h2>
-  <a class="carte" href="https://lekiosque-fr.github.io/mes-reperes/"><span class="emo">🌙</span><div><b>Le carnet « Mes repères »</b><span>Du projet bébé aux 9 mois, sur tablette. Extrait gratuit.</span></div></a>
-  <a class="carte" href="https://lekiosque-fr.github.io/boutique/"><span class="emo">👕</span><div><b>La boutique</b><span>T-shirts, sweats et mugs drôles. -20 % en ce moment.</span></div></a>
-  <a class="carte" href="https://lekiosque-fr.github.io/pub-video/"><span class="emo">🎬</span><div><b>Le Kiosque Pub</b><span>Une vraie pub vidéo pour votre commerce, dès 39 €.</span></div></a>
-
-  <h2>Suis-nous</h2>
-  <div class="reseaux">
-    <a href="https://www.instagram.com/lekiosquestudio/">Instagram</a>
-    <a href="https://www.tiktok.com/@lekiosquestudio">TikTok</a>
-    <a href="https://www.facebook.com/profile.php?id=1482315994964409">Facebook</a>
-    <a href="https://fr.pinterest.com/lekiosquestudio/">Pinterest</a>
-    <a href="https://www.youtube.com/@LeKiosqueStudio">YouTube</a>
-    <a href="https://www.threads.com/@lekiosquestudio">Threads</a>
-  </div>
+  <!-- 16/11/2026 (choix A de Romain) : une grande case par projet, avec ses propres réseaux juste dessous -->
+  <section class="projet">
+    <a class="carte" href="https://lekiosque.myspreadshop.fr"><span class="emo">👕</span><div><b>La boutique</b><span>T-shirts, sweats et mugs cadeaux. -25 % pour Noël.</span><i class="bouton">Voir la boutique</i></div></a>
+    <div class="reseaux"><a href="https://fr.pinterest.com/mesreperes/t-shirts-cadeaux-dr%C3%B4les/">Pinterest</a></div>
+  </section>
+  <section class="projet">
+    <a class="carte" href="https://www.tiktok.com/@lekiosquefr"><span class="emo">🎬</span><div><b>La chaîne Le Kiosque</b><span>Tes droits et les idées reçues, expliqués en 1 minute.</span><i class="bouton">Regarder</i></div></a>
+    <div class="reseaux"><a href="https://www.tiktok.com/@lekiosquefr">TikTok</a><a href="https://www.youtube.com/@lekiosquefr">YouTube</a><a href="https://www.facebook.com/profile.php?id=1482315994964409">Facebook</a></div>
+  </section>
+  <section class="projet">
+    <a class="carte" href="https://lekiosque-fr.github.io/pub-video/"><span class="emo">📺</span><div><b>Le Kiosque Pub</b><span>Une vraie pub vidéo pour votre commerce, dès 39 €.</span><i class="bouton">Voir les exemples</i></div></a>
+  </section>
+  <section class="projet">
+    <a class="carte" href="https://lekiosque-fr.github.io/mes-reperes/"><span class="emo">🌙</span><div><b>Le carnet « Mes repères »</b><span>Du projet bébé aux 9 mois, sur tablette. Extrait gratuit.</span><i class="bouton">Essayer l'extrait</i></div></a>
+    <div class="reseaux"><a href="https://fr.pinterest.com/mesreperes/">Pinterest</a></div>
+  </section>
+  <section class="projet">
+    <div class="carte calme"><span class="emo">🏪</span><div><b>Le Kiosque Studio</b><span>Les coulisses et les nouveautés de toutes nos créations.</span></div></div>
+    <div class="reseaux">
+      <a href="https://www.instagram.com/lekiosquestudio/">Instagram</a>
+      <a href="https://www.tiktok.com/@lekiosquestudio">TikTok</a>
+      <a href="https://www.youtube.com/@LeKiosqueStudio">YouTube</a>
+      <a href="https://www.threads.com/@lekiosquestudio">Threads</a>
+    </div>
+  </section>
 </main>
 <footer>© 2026 Le Kiosque Studio</footer>
 </body>
